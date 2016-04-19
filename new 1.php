@@ -5,7 +5,7 @@
 	$array = $collection->find();
 	foreach ($array as $a)
 	{
-		echo "Name: " . $a['name'] . ", e-mail: " . $a['email'] . "<br>";
+		echo "Name: " . $a['name'] . ", e-mail: " . $a['email'] . ", age: " . $a['age'] . "<br>";
 	}
 	exit();
 ?>
