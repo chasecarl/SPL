@@ -1,11 +1,4 @@
-<?php
-	$mongo = new MongoClient();
-	$db = $mongo->test;
-	$collection = $db->accounts;
-	$array = $collection->find();
-	foreach ($array as $a)
-	{
-		echo "Name: " . $a['name'] . ", e-mail: " . $a['email'] . ", age: " . $a['age'] . "<br>";
-	}
-	exit();
-?>
+<?php header ("Content-Type: text/html; charset=utf-8")?>
+  <?php
+$connection = new MongoClient();
+$list = $connection->test->accounts;
