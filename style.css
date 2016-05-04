@@ -56,15 +56,12 @@ h5:hover
 }
 .btn
 {
-    
     font-size: 26px;
     background-color:lightgoldenrodyellow;
-    color: forestgreen;
+    color: cornflowerblue;
     border-radius: 5px;
     margin-top: 5px;
     margin-bottom: 5px;
-    border: none;
-    outline: none;
 }
 .btn3
 {
@@ -82,13 +79,11 @@ h5:hover
 }
 title
 {
-    
     font-size: 16px;
     color: darkred;
 }
 .btn1
 {
-    
     font-size: 26px;
     background-color: lightgoldenrodyellow;
     color: red;
@@ -100,13 +95,11 @@ title
 }
 #delete
 {
-     margin-top: 0px;
-     
+    margin-top: 0px;
 }
 .data
 {
     width: 60%;
-    background-image: url( bg-35.png);
     height: 24px;
     font-family: monospace;
     color: darkblue;

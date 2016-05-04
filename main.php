@@ -23,8 +23,7 @@ $(function() {
     </script>
     </head>
     <body>
-        <div align="right"><a href="logout.php">Log out</a></div>
-        <h1>Welcome, <?php  echo $person["name"];?></h1>
+        <div align="right"><label>Welcome, <?php  echo $person["name"];?> | <a href="logout.php">Log out</a></label></div><br>
         <h2>Create your notes!</h2>
         <div align="center">
         <div class="form">
@@ -50,14 +49,14 @@ $(function() {
             <div class ="form2 ui-widget ui-corner-all ui-state-error">
             <h5 style='width:20%'><?php echo $notes[$i]["date"]?></h5>
             <form method="post" action="deleteNote.php" id="delete">
-                <input type="submit" value="&#10008;" class="btn1" title="Delete"/>
+                <input type="submit" value="Delete" class="btn1" title="Delete"/>
                 <textarea class="id" name="id" ><?php echo $notes[$i]["id"]?></textarea>         
             </form>
             <form method="post" action="changenote.php">
                 <textarea class="id" name="id"><?php echo $notes[$i]["id"]?></textarea>
                 <textarea class="note2" name="note" cols="48" rows="7" wrap="hard" onkeypress="if(event.keyCode==10||(event.ctrlKey && event.keyCode==13))koment.click();"><?php echo $notes[$i]["text"];?>
                 </textarea>
-                <input type="submit" value="" class="btn" id="koment"/>
+                <input type="submit" value="Save" class="btn" id="koment"/>
             </form>
             
         </div>
