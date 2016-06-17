@@ -5,7 +5,7 @@
    $today = date("d.m.y");
    $count = count($person["notes"])-1;
    $newElem = array('$push' => array("notes" => array("id"=>++$count,"text"=>$note,"date"=>$today)));
-   $list->update($filter,$newElem);
+   $list->update($filter, $newElem);
    ?>
 <script>
     document.location = 'main.php';

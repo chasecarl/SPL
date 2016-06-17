@@ -22,5 +22,5 @@ header ("Content-Type: text/html; charset=utf-8");?>
       $list->update($person,$newDoc,$option);
    ?>
 <script>
-       document.location = 'main.php'; 
+	document.location = 'main.php';
 </script>

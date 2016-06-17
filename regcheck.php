@@ -50,7 +50,7 @@
 		"email"=>$email,
 		"regdate"=>$today,
 		"notes"=> array(array(
-			"id"=>-1,
+			"id"=>null,
 			"text"=>"",
 			"date"=>$today
 		))
