@@ -35,8 +35,6 @@
             </form><br>
         </div>  
         </div>
-        
-        <hr width="60%">
 		
         <div class="container">
 		<h2 style="text-align:center">Your notes</h2>
