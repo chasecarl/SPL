@@ -26,7 +26,7 @@
         <div align="right"><h4>Welcome, <?php  echo $person["name"];?> | <a href="logout.php">Log out</a>&nbsp;</h4></div><br>
         
         <div align="center">
-		<h2>Create notes!</h2><br>
+		<h2>Write notes!</h2><br>
         <div class="form">
             <form method="post" action="addNote.php">
                 <textarea class="note" name="notes" cols="48" rows="7" wrap="hard" required placeholder="Write your note here..."></textarea><br>
@@ -55,7 +55,7 @@
 			<h5 style='width:20%'><?php echo $notes[$i]["date"]?></h5>
 			<form method="post" action="deleteNote.php" id="delete">
 				<div class="row">
-					<div class="col-sm-6"><textarea class="id" name="id" cols="2" rows="1"><?php echo $notes[$i]["id"]?></textarea></div>
+					<div class="col-sm-6"><textarea class="id" name="id" cols="2" rows="1" style="resize:none;"><?php echo $notes[$i]["id"]?></textarea></div>
 					<div class="col-sm-6" align="right"><input type="submit" value="X" class="btn btn-danger" title="Delete" align="right"/></div>
 				</div>
 			</form>
